@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="stopwatch-container">
+      <div class="stopwatch">
+        <div class="timerDisplay">00 : 00 : 00</div>
+      </div>
+      <div class="buttons">
+        <button
+          id="stopBtn"
+          class="btn"
+          style="--clr: rgba(146, 21, 21, 0.6); --hvr: rgba(247, 11, 11, 0.8)"
+        >
+          Stop
+        </button>
+        <audio id="startSound">
+            <source src="./audios/start.mp3" type="audio/mpeg" />
+          </audio>
+        <button
+          id="startBtn"
+          class="btn"
+          style="--clr: rgba(6, 56, 6, 0.6); --hvr: rgba(16, 236, 16, 0.8)"
+        >
+          Start
+        </button>
+        <button
+          id="resetBtn"
+          class="btn"
+          style="--clr: rgba(10, 10, 75, 0.6); --hvr: rgba(13, 13, 224, 0.8)"
+        >
+          Reset
+        </button>
+        <audio id="lapSound">
+            <source src="./audios/laps.mp3" type="audio/mpeg" />
+        </audio>
+        
+        <button id="lapBtn" class="btn" style="--clr: rgba(75, 10, 75, 0.6); --hvr: rgba(219, 17, 219, 0.8)">
+            Lap 
+        </button>
+      </div>
+      <div class="lapTimes">
+        <ul class="lapList"></ul>
+      </div>
+      
+      
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
